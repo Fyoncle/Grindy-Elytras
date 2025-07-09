@@ -28,3 +28,5 @@ A mod that replaces Elytras in the End Cities with Elytra Fragment which is requ
 This mod was inspired by the [Harder Elytras](https://modrinth.com/mod/harder-elytras) mod, since only datapack version of it supported 1.20.1 and it was very destructive, I decided to make my own interpretation on it.
 
 Elytra Fragment texture is made by [Shizotoaster](https://modrinth.com/user/shizotoaster)
+
+And thanks to [Cassian](https://modrinth.com/user/Cassian) for helping out on how to code this.
