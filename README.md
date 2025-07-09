@@ -1,8 +1,23 @@
 # Grindy <font color="#ada9ee">Elytras</font>
 
-A mod that replaces Elytras in the end cities with Elytra Fragment which is required for Elytra's crafting recipe that this mod adds.
+A mod that replaces Elytras in the End Cities with Elytra Fragment which is required for Elytra's crafting recipe that this mod adds.
 
-This mod does <font color="#de3735">NOT</font> affect End Cities that were already generated before, it only applies to the End Cities which is generated after the mod is installed.
+<details>
+<summary>🔎 F.A.Q</summary>
+
+- **Q: Does this mod affect already generated End Cities?**
+    - **A:** It does not. This mod only applies to the End Cities which is generated after it's installed.
+#
+- **Q: Does it work with mods or datapacks that changes End Cities or End Ships?**
+    - **A:** Yes. It does.
+#
+- **Q: Can you make a Forge version?**
+    - **A:** No, this mod is a Fabric exclusive.
+#
+- **Q: Can you port it to 1.21.6 or above?**
+    - **A:** No, consider using [Harder Elytras](https://modrinth.com/mod/harder-elytras) instead. I am only planning to release it for 1.20.x
+
+</details>
 
 ### Crafting:
 
