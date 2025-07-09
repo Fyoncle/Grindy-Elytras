@@ -17,7 +17,7 @@ public class ElytraFragmentItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("item.grindy-elytras.elytra_fragment.tooltip").formatted(Formatting.YELLOW));
+        tooltip.add(Text.translatable("item.grindy-elytras.elytra_fragment.tooltip").formatted(Formatting.GRAY));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }
