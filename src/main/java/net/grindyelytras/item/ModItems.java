@@ -1,6 +1,5 @@
 package net.grindyelytras.item;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.grindyelytras.GrindyElytras;
 import net.grindyelytras.item.custom.ElytraFragmentItem;
@@ -13,10 +12,10 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item ELYTRA_FRAGMENT = register("elytra_fragment",
-            new ElytraFragmentItem(new FabricItemSettings()));
+            new ElytraFragmentItem(new Item.Settings()));
 
     private static <I extends Item> I register(String name, I item) {
-        return Registry.register(Registries.ITEM, new Identifier(GrindyElytras.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, Identifier.of(GrindyElytras.MOD_ID, name), item);
     }
 
     public static void registerModItems() {

@@ -14,8 +14,8 @@ A mod that replaces Elytras in the End Cities with Elytra Fragment which is requ
 - **Q: Can you make a Forge version?**
     - **A:** No, this mod is a Fabric exclusive.
 #
-- **Q: Can you port it to 1.21.6 or above?**
-    - **A:** No, consider using [Harder Elytras](https://modrinth.com/mod/harder-elytras) instead. I am only planning to release it for 1.20.x
+- **Q: Can you port it above 1.21.5?**
+    - **A:** No, use [Harder Elytras](https://modrinth.com/mod/harder-elytras) instead. This mod is not a replacement, it's my interpretation of it for older versions.
 
 </details>
 
