@@ -12,7 +12,7 @@ public class ModItems {
             new ElytraFragmentItem(new Item.Settings().group(ItemGroup.TRANSPORTATION)));
 
     private static <I extends Item> I register(String name, I item) {
-        return Registry.register(Registry.ITEM, Identifier.of(GrindyElytras.MOD_ID, name), item);
+        return Registry.register(Registry.ITEM, new Identifier(GrindyElytras.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
