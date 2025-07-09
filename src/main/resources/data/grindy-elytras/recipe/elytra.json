@@ -6,15 +6,15 @@
     "# #"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:phantom_membrane"
-    },
-    "N": {
-      "item": "minecraft:nether_star"
-    },
-    "E": {
-      "item": "grindy-elytras:elytra_fragment"
-    }
+    "#": [
+      "minecraft:phantom_membrane"
+    ],
+    "N": [
+      "minecraft:nether_star"
+    ],
+    "E": [
+      "grindy-elytras:elytra_fragment"
+    ]
   },
   "result": {
     "id": "minecraft:elytra",

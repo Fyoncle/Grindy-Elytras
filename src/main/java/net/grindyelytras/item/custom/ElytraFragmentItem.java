@@ -1,21 +1,21 @@
 package net.grindyelytras.item.custom;
 
+import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 
-import java.util.List;
-
 public class ElytraFragmentItem extends Item {
-    public ElytraFragmentItem(Settings settings) {
-        super(settings);
+    static {
+        ItemTooltipCallback.EVENT.register((stack, context, type, lines) -> {
+            if (stack.getItem() instanceof ElytraFragmentItem) {
+                lines.add(Text.translatable("item.grindy-elytras.elytra_fragment.tooltip")
+                        .formatted(Formatting.GRAY));
+            }
+        });
     }
 
-    @Override
-    public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.translatable("item.grindy-elytras.elytra_fragment.tooltip").formatted(Formatting.GRAY));
-        super.appendTooltip(stack, context, tooltip, type);
+    public ElytraFragmentItem(Settings settings) {
+        super(settings);
     }
 }

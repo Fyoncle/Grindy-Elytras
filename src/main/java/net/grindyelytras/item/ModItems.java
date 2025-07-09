@@ -8,18 +8,24 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item ELYTRA_FRAGMENT = register("elytra_fragment",
-            new ElytraFragmentItem(new Item.Settings()));
-
-    private static <I extends Item> I register(String name, I item) {
-        return Registry.register(Registries.ITEM, Identifier.of(GrindyElytras.MOD_ID, name), item);
-    }
+    public static Item ELYTRA_FRAGMENT;
 
     public static void registerModItems() {
         GrindyElytras.LOGGER.info("Grindy Elytras - Torturing people who wants to get Elytra...");
+
+        Identifier id = Identifier.of(GrindyElytras.MOD_ID, "elytra_fragment");
+        RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, id);
+
+        Item.Settings settings = new Item.Settings()
+                .registryKey(key);
+
+        ELYTRA_FRAGMENT = Registry.register(Registries.ITEM, key, new ElytraFragmentItem(settings));
+
         init();
     }
 
