@@ -16,6 +16,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        GrindyElytras.LOGGER.info("Grindy Elytras - Torturing people who wants to get Elytra...");
+        GrindyElytras.LOGGER.info("Torturing people who wants to get Elytra...");
     }
 }
