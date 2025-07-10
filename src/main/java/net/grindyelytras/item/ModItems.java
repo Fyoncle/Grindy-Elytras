@@ -16,7 +16,7 @@ public class ModItems {
     public static Item ELYTRA_FRAGMENT;
 
     public static void registerModItems() {
-        GrindyElytras.LOGGER.info("Grindy Elytras - Torturing people who wants to get Elytra...");
+        GrindyElytras.LOGGER.info("Torturing people who wants to get Elytra...");
 
         Identifier id = Identifier.of(GrindyElytras.MOD_ID, "elytra_fragment");
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, id);
